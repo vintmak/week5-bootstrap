@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+
+  <title>Hello, world!</title>
+</head>
+<body>
+  <!-- Padding on the right a little bit -->
+  <div class="container">
+    <h1>Hello, world! - <small>This slogan 1</small></h1>
+    <h2>This is subheading 2 <small>This slogan 2</small></h2>
+    <h3>This is subheading 3 <small>This slogan 3</small></h3>
+    <h4>This is subheading 4 <small>This slogan 4</small></h4>
+    <h5>This is subheading 5 <small>This slogan 5</small></h5>
+    <h6>This is subheading 6 <small>This slogan 6</small></h6>
+    <hr>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et <strong>dolore magna aliqua</strong>. Ut enim ad minim veniam,
+      quis nostrud exercitation <em>ullamco laboris nisi</em> ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. <mark>Excepteur sint occaecat</mark> cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, <del>consectetur adipisicing elit</del>, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco <strong>laboris nisi ut aliquip</strong> ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. <em>Excepteur sint occaecat</em> cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <ul>
+      <li>This is item 1</li>
+      <li>This is item 2</li>
+      <li>This is item 3</li>
+    </ul>
+
+    <ol>
+      <li>This is one item</li>
+      <li>This is another item</li>
+      <li>This is last item</li>
+    </ol>
+    <ul class="list-inline">
+      <li>This is item 1</li>
+      <li>This is item 2</li>
+      <li>This is item 3</li>
+    </ul>
+    <p>This is normal</p>
+    <p class="text-changer">This is center align</p>
+    <p class="text-right">This is right align</p>
+    <p>To restart your computer, you use <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>del</kbd></p>
+    <p>Let's take a <code>&lt;br/&gt;</code> in 10 minutes</p>
+    <p class="text-primary">This is primary color</p>
+    <p class="text-secondary">This is secondary color</p>
+    <p class="text-tertiary">This is tertiary color</p>
+    <p class="text-warning">This is warning color</p>
+    <p class="text-danger">This is danger color</p>
+    <p class="text-info">This is info color</p>
+    <p class="bg-dark text-light">This is color with bg</p>
+    <p class="big primary text-warning">This is color with bg</p>
+
+    <button class="btn btn-primary">Button</button>
+    <button class="btn btn-secondary">Another Button</button>
+    <button class="btn btn-danger">Button Last</button>
+    <button class="btn btn-danger btn-lg">Button</button>
+    <button class="btn btn-danger btn-sm">Button</button>
+    <button class="btn btn-danger btn-lg" disabled>Button</button>
+    <hr>
+    <h2>This is a form</h2>    
+    <form>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Name</label>
+        <input type="text" class="form-control">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email</label>
+        <input type="email" class="form-control" id="exampleInputEmail">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormMessage" class="form-label">Message</label>
+        <textarea class="form-control" id="exampleFormMessage" rows="3"></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormMessage" class="form-label">Gender</label>
+        <select class="form-control" aria-label="Default select example">
+          <option selected>Select your gender</option>
+          <option value="1">Male</option>
+          <option value="2">Female</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormMessage" class="form-label">Upload file</label>
+        <div class="form-file">
+          <input type="file" class="form-file-input" id="customFile">
+          <label class="form-check-label" for="customFile">
+            <span class="form-file-text">Choose file...</span>
+            <span class="form-file-button">Browse</span>
+          </label>
+        </div>
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <hr>
+  <h2>Tables</h2>
+  <table class="table table-bordered table-stripped table-hover">
+    <thead>
+      <tr class="bg-sucess text-light">
+        <th>Name</th>
+        <th>Email</th>
+        <th>Company</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Muz</td>
+        <td>mmm@gmail.com</td>
+        <td>Airbus</td>
+      </tr>      
+      <tr>
+        <td>Wan</td>
+        <td>www@gmail.com</td>
+        <td>AMIC</td>
+      </tr>      
+      <tr>
+        <td>Zul</td>
+        <td>zzz@gmail.com</td>
+        <td>NOR Tech</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <hr>
+  <h2>Some components</h2>
+  <div class="card" style="width: 18rem;">
+    <img src="https://place-hold.it/300" class="card-img-top" alt="This is a placeholder">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+  <div class="card mt-3" style="width: 18rem;">
+    <div class="card-header bg-danger text-light">
+      Featured
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Cras justo odio</li>
+      <li class="list-group-item">Dapibus ac facilisis in</li>
+      <li class="list-group-item">Vestibulum at eros</li>
+    </ul>
+  </div>
+  <h2>Bootstrap grid system</h2>
+  <div class="row">
+    <div class="col-6">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="col-6">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-3">
+      >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. 
+    </div>
+    <div class="col-9">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-4">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+    <div class="col-4">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+    <div class="col-4">
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-2"><p>This is a column</p></div>
+    <div class="col-2"><p>This is a column</p></div>
+    <div class="col-2"><p>This is a column</p></div>
+    <div class="col-2"><p>This is a column</p></div>
+    <div class="col-2"><p>This is a column</p></div>
+    <div class="col-2"><p>This is a column</p></div>  
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-9">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+    <div class="col-3">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. 
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-3">
+        <div class="card mt-3">
+    <div class="card-header bg-danger text-light">
+      Featured
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Cras justo odio</li>
+      <li class="list-group-item">Dapibus ac facilisis in</li>
+      <li class="list-group-item">Vestibulum at eros</li>
+    </ul>
+  </div>
+    </div>
+    <div class="col-9">
+      <table class="table table-bordered mt-3">
+        <thead>
+          <tr class="bg-danger text-light">
+            <th>Title</th>
+            <th>ISBN</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tr>
+          <td>Let s go to the zoo</td>
+          <td>12345</td>
+          <td>RM12</td>
+        </tr>
+        <tr>
+          <td>ABC For Kids</td>
+          <td>12345</td>
+          <td>RM30</td>
+        </tr>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-4">
+      <img src="https://static.asiawebdirect.com/m/kl/portals/kuala-lumpur-ws/homepage/pagePropertiesOgImage/kuala-lumpur.jpg.jpg" class="img-fluid">
+    </div>
+    <div class="col-8"></div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+</div>
+
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper.js -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper.js and Bootstrap JS
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js" integrity="sha384-5h4UG+6GOuV9qXh6HqOLwZMY4mnLPraeTrjT5v07o347pj6IkfuoASuGBhfDsp3d" crossorigin="anonymous"></script>
+  -->
+</body> 
+</html>
