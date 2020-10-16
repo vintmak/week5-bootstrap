@@ -4,10 +4,8 @@
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
-
 	<title>Wod Tracker</title>
 </head>
 <body>
@@ -27,52 +25,93 @@
 				<label for="assigneeform" class="form-label">WOD Assignee</label>
 				<input type="text" class="form-control" id="assigneeform">
 			</div>
-			<button class="btn btn-primary">Add new Item</button>
+			<button class="btn btn-primary" onClick="addItemPressed()">Add new Item</button>
 		</div>
-		<div class="card px-3 py-3 my-3 bg-light"></div>
-		<h2>List of WODs</h2>
-		<table class="table table-bordered table-striped table-hover">
-			<thead>
-				<tr>
-					<th>WOD name</th>
-					<th>WOD Diificulty</th>
-					<th>WOD Assignee</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>Mock data</td>
-					<td>easy</td>
-					<td>Aiman</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-	<div class="card px-3 py-3 my-3">
-		<h2>WOD Detail</h2>
-		<p>Mock name</p>
-		<p>Mock Difficulty</p>
-		<p>Mock assignee</p>
-		<p>Done</p>
-		<div class="row">
-			<div class="col-6">
-				<button class="btn btn-danger btn-block">Delete</button>
-			</div>
-			<div class="col-6">
-				<button class="btn btn-info btn-block text-light">Mark as done</button>
+		<div class="card px-3 py-3 my-3 bg-light">
+			<h2>List of WODs</h2>
+			<table class="table table-bordered table-striped table-hover">
+				<thead>
+					<tr>
+						<th>WOD name</th>
+						<th>WOD Diificulty</th>
+						<th>WOD Assignee</th>
+					</tr>
+				</thead>
+				<tbody id="wodtbody">
+				</tbody>
+			</table>
+		</div>
+		<div class="card px-3 py-3 my-3" hidden id="wodCard">
+			<h2>WOD Detail</h2>
+			<p id="wodName">Mock name</p>
+			<p id="wodDifficulty">Mock Difficulty</p>
+			<p id="wodAssignee">Mock assignee</p>
+			<p id="wodStatus">Done</p>
+			<div class="row">
+				<div class="col-6">
+					<button class="btn btn-danger btn-block" onclick="deletePressed()">Delete</button>
+				</div>
+				<div class="col-6">
+					<button class="btn btn-info btn-block text-light" onclick="markAsDonePressed">Mark as done</button>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 
-<!-- Optional JavaScript; choose one of the two! -->
+	<!-- Optional JavaScript; choose one of the two! -->
 
-<!-- Option 1: Bootstrap Bundle with Popper.js -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
+	<!-- Option 1: Bootstrap Bundle with Popper.js -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
 
-    <!-- Option 2: Separate Popper.js and Bootstrap JS
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js" integrity="sha384-5h4UG+6GOuV9qXh6HqOLwZMY4mnLPraeTrjT5v07o347pj6IkfuoASuGBhfDsp3d" crossorigin="anonymous"></script>
--->
+	<script type="text/javascript">
+		var wods = []
+
+		function addItemPressed(){
+			var name = document.getElementById("nameform").value;
+			var difficulty = document.getElementById("difficultyform").value;
+			var assignee = document.getElementById("assigneeform").value;
+
+			var newWod = {
+				name:name,
+				difficulty:difficulty,
+				assignee:assignee,
+				completed:false
+			}
+
+			wods.push(newWod)
+
+			var newTd1 = document.createElement("td")
+			var newTd2 = document.createElement("td")
+			var newTd3 = document.createElement("td")
+
+			newTd1.innerHTML = name;
+			newTd2.innerHTML = difficulty;	
+			newTd3.innerHTML = assignee
+
+			var newTr = document.createElement("tr");
+			newTr.wod = newWod
+			newTr.addEventListener('click', function(){
+				document.getElementById("wodCard").hidden = false
+				document.getElementById("wodName").innerHTML = newWod.name;
+				document.getElementById("wodDifficulty").innerHTML = newWod.difficulty;
+				document.getElementById("wodAssignee").innerHTML = newWod.assignee
+				document.getElementById("wodStatus").innerHTML = newWod.status
+			})
+
+			var wodtbody = document.getElementById("wodtbody")
+			newTr.appendChild(newTd1)
+			newTr.appendChild(newTd2)
+			newTr.appendChild(newTd3)
+			wodtbody.appendChild(newTr)
+		}
+
+		function deletePressed(){
+
+		}
+
+		function markAsDonePressed(){
+
+		}
+	</script>
 </body>
 </html>
